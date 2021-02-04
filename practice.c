@@ -453,41 +453,33 @@
 // so you have array_size variable it is a size of your array. For loop iterates from 0 (i=0) and does that as long as i is less than array size (i<array_size part). Every iteration your for loop will increment i by one (i++) that is general for loop declaration, if it is still not clear let me know I will explain that as well, as understanding this concept is very important
 // then you have conditions - if statement. in if statement you check if certain logic is true or false. In your case you check if min_array[i] is equal to delete_num
 // #include<stdio.h>
-// void main(){
-//     int array_size,i,k=0,delete_num;
+void main(){
+    int array_size,i,k=0,delete_num;
 
-//     printf("\nEnter Array Size: ");
-//     scanf("%d",&array_size);
-//     int main_array[array_size],final[array_size];
+    printf("\nEnter Array Size: ");
+    scanf("%d",&array_size);
+    int main_array[array_size],final[array_size];
 
-//     for(i=0;i<array_size;i++){
-//         printf("Enter %d Element: ",i+1);
-//         scanf("%d",&main_array[i]);
-//     }
-// printf("\nEnter Element To Be Deleted: ");
-// scanf("%d",&delete_num);
-
-//     for(i=0;i<array_size;i++){
-//         if (main_array[i] == delete_num)
-//             continue;
-//         else{
-//             final[k] = main_array[i];
-//             k++;
-//         }
-//     }
-//     printf("\nFinal Array: ");
-//     for(i=0;i<k;i++){
-//         printf("%d  ",final[i]);
-//     }
-// }
-
-
-
-
-
-#include <stdio.h>
-
-int main(){
-    printf("Hello World are you there? then hiii");
-    return 0;
+    for(i=0;i<array_size;i++){
+        printf("Enter %d Element: ",i+1);
+        scanf("%d",&main_array[i]);
     }
+printf("\nEnter Element To Be Deleted: ");
+scanf("%d",&delete_num);
+
+    for(i=0;i<array_size;i++){
+        if (main_array[i] == delete_num)
+            continue;
+        else{
+            final[k] = main_array[i];
+            k++;
+        }
+    }
+    printf("\nFinal Array: ");
+    for(i=0;i<k;i++){
+        printf("%d  ",final[i]);
+    }
+}
+
+
+
